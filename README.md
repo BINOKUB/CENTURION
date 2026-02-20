@@ -1,7 +1,7 @@
-# <img src="assets/logo.png" height="30px" style="margin-right: 10px; vertical-align: middle;"> CENTURION - Coffre-fort Cryptographique Local
+# <img src="logo.png" height="30px" style="margin-right: 10px; vertical-align: middle;"> CENTURION - Coffre-fort Cryptographique Local
 **Centurion** est une application de bureau sécurisée conçue pour stocker et protéger vos fichiers sensibles (photos, vidéos, mots de passe) de manière 100% locale et autonome. Fuyez les failles des services cloud : avec Centurion, vous êtes le seul maître de vos clés.
 
-![Centurion Banner](logo.png) ## ✨ Fonctionnalités Principales
+##  Fonctionnalités Principales
 
 *  **Chiffrement Militaire (AES-256) :** Tous les fichiers importés sont chiffrés et rendus illisibles pour le système d'exploitation. Sans le mot de passe maître, les données sont inexploitables.
 *  **Galerie Multimédia Fluide :** Affichage moderne sous forme de tuiles. Les miniatures des images et des vidéos sont générées automatiquement lors de l'importation pour une navigation ultra-rapide sans surcharger la mémoire.
