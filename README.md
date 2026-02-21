@@ -24,7 +24,6 @@ Centurion agit comme un véritable trou noir sécurisé et peut engloutir tous l
 ## Architecture Technique (Aperçu)
 
 Bien que le code source de Centurion soit **fermé et propriétaire**, son architecture repose sur des standards industriels éprouvés :
-* **Moteur :** [Electron] pour des performances optimales sur environnement de bureau (Windows/Mac).
 * **Cryptographie :** Algorithme `aes-256-cbc` avec génération de vecteur d'initialisation (IV) unique pour chaque fichier chiffré.
 * **Traitement Multimédia :** Moteur natif pour le traitement des images lourdes et lecteur fantôme basse consommation pour l'extraction de miniatures vidéo.
 
