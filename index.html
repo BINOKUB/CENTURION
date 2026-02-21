@@ -143,9 +143,17 @@
             border-color: var(--blue-mental);
         }
 
-        .card-icon {
-            font-size: 40px;
+        /* --- STYLE POUR LES NOUVELLES ICÔNES 3D --- */
+        .card-icon-img {
+            width: 80px;
+            height: auto;
             margin-bottom: 20px;
+            filter: drop-shadow(0px 4px 8px rgba(0, 255, 255, 0.2));
+            transition: transform 0.3s;
+        }
+
+        .card:hover .card-icon-img {
+            transform: scale(1.1); /* Petit effet de zoom au survol */
         }
 
         .card h3 {
@@ -241,37 +249,37 @@
         <div class="grid">
             
             <div class="card">
-                <div class="card-icon">🛡️</div>
+                <img src="chiffrement-militaire.png" alt="Chiffrement Militaire" class="card-icon-img">
                 <h3>Chiffrement Militaire</h3>
                 <p>Algorithme natif <strong>AES-256-CBC</strong>. Vos fichiers sont mathématiquement verrouillés et rendus totalement illisibles pour le système d'exploitation.</p>
             </div>
 
             <div class="card">
-                <div class="card-icon">👻</div>
+                <img src="dechiffrement.png" alt="Déchiffrement In-Memory" class="card-icon-img">
                 <h3>Déchiffrement In-Memory</h3>
                 <p>Aucun fichier temporaire n'est jamais écrit sur votre disque dur. Vos médias sont déchiffrés à la volée directement dans la mémoire vive (RAM).</p>
             </div>
 
             <div class="card">
-                <div class="card-icon">🚀</div>
+                <img src="architecture-flux-massif.png" alt="Architecture de Flux Massif" class="card-icon-img">
                 <h3>Architecture de Flux Massif</h3>
                 <p>Importez et sauvegardez des dizaines de Gigaoctets sans saturer votre ordinateur. Centurion gère les flux à plus de <strong>15 Go par minute</strong>.</p>
             </div>
 
             <div class="card">
-                <div class="card-icon">🧹</div>
+                <img src="operation-fantome.png" alt="Opération Fantôme" class="card-icon-img">
                 <h3>Opération Fantôme</h3>
                 <p>Après l'importation sécurisée de vos fichiers dans le coffre, le "Shredder" intégré détruit physiquement les fichiers originaux de votre PC pour ne laisser aucune trace.</p>
             </div>
 
             <div class="card">
-                <div class="card-icon">🔌</div>
+                <img src="hors-ligne.png" alt="100% Hors-Ligne" class="card-icon-img">
                 <h3>100% Hors-Ligne</h3>
                 <p>Aucun compte requis. Aucune connexion serveur. Fuyez les failles du Cloud : Centurion tourne entièrement et exclusivement sur votre machine.</p>
             </div>
 
             <div class="card">
-                <div class="card-icon">🗂️</div>
+                <img src="gallerie-multimedia.png" alt="Galerie Multimédia HD" class="card-icon-img">
                 <h3>Galerie Multimédia HD</h3>
                 <p>Organisez vos photos, regardez vos films chiffrés avec fluidité grâce au lecteur vidéo intégré et classez vos secrets par catégories incassables.</p>
             </div>
