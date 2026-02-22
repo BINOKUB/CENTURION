@@ -1,3 +1,202 @@
+ <style>
+        :root {
+            /* Palette "Blanc Technique" & "Bleu Mental" */
+            --bg-white: #ffffff;
+            --bg-light: #f4f7f9;
+            --text-main: #1e293b;
+            --text-muted: #64748b;
+            --blue-mental: #0ea5e9; /* Bleu clair vif et intelligent */
+            --blue-deep: #0f172a; /* Bleu très foncé, presque noir, pour les contrastes */
+            --blue-accent: #2563eb; /* Bleu roi d'action */
+            --danger: #ef4444;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: var(--bg-white);
+            color: var(--text-main);
+            line-height: 1.6;
+        }
+
+        /* --- EN-TÊTE / NAVIGATION --- */
+        header {
+            background-color: var(--bg-white);
+            border-bottom: 1px solid #e2e8f0;
+            padding: 20px 50px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        .logo {
+            font-size: 24px;
+            font-weight: 800;
+            letter-spacing: 2px;
+            color: var(--blue-deep);
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .logo span {
+            color: var(--blue-mental);
+        }
+
+        /* --- ZONE HÉROS (HAUT DE PAGE) --- */
+        .hero {
+            background: linear-gradient(135deg, var(--bg-light) 0%, #ffffff 100%);
+            padding: 100px 20px;
+            text-align: center;
+        }
+
+        .hero h1 {
+            font-size: 52px;
+            font-weight: 800;
+            color: var(--blue-deep);
+            margin-bottom: 20px;
+            max-width: 800px;
+            margin-left: auto;
+            margin-right: auto;
+            line-height: 1.2;
+        }
+
+        .hero p {
+            font-size: 20px;
+            color: var(--text-muted);
+            max-width: 600px;
+            margin: 0 auto 40px auto;
+        }
+
+        .btn-primary {
+            display: inline-block;
+            background-color: var(--blue-accent);
+            color: white;
+            padding: 16px 35px;
+            font-size: 18px;
+            font-weight: 600;
+            text-decoration: none;
+            border-radius: 8px;
+            box-shadow: 0 4px 15px rgba(37, 99, 235, 0.3);
+            transition: transform 0.2s, background-color 0.2s;
+        }
+
+        .btn-primary:hover {
+            background-color: #1d4ed8;
+            transform: translateY(-2px);
+        }
+
+        .version-tag {
+            display: block;
+            margin-top: 15px;
+            font-size: 14px;
+            color: var(--text-muted);
+            font-weight: 600;
+        }
+
+        /* --- SECTION FONCTIONNALITÉS --- */
+        .features {
+            padding: 80px 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .section-title {
+            text-align: center;
+            font-size: 32px;
+            color: var(--blue-deep);
+            margin-bottom: 60px;
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 40px;
+        }
+
+        .card {
+            background: var(--bg-white);
+            border: 1px solid #e2e8f0;
+            border-radius: 12px;
+            padding: 40px 30px;
+            text-align: center;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.02);
+            transition: transform 0.3s, border-color 0.3s;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+            border-color: var(--blue-mental);
+        }
+
+        /* --- STYLE POUR LES NOUVELLES ICÔNES 3D --- */
+        .card-icon-img {
+            width: 80px;
+            height: auto;
+            margin-bottom: 20px;
+            filter: drop-shadow(0px 4px 8px rgba(0, 255, 255, 0.2));
+            transition: transform 0.3s;
+        }
+
+        .card:hover .card-icon-img {
+            transform: scale(1.1); /* Petit effet de zoom au survol */
+        }
+
+        .card h3 {
+            font-size: 22px;
+            color: var(--blue-deep);
+            margin-bottom: 15px;
+        }
+
+        .card p {
+            color: var(--text-muted);
+            font-size: 16px;
+        }
+
+        /* --- SECTION SÉCURITÉ & AVERTISSEMENT --- */
+        .security-warning {
+            background-color: var(--blue-deep);
+            color: white;
+            padding: 80px 20px;
+            text-align: center;
+        }
+
+        .warning-box {
+            background-color: rgba(255, 255, 255, 0.05);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            border-left: 5px solid var(--danger);
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 30px;
+            border-radius: 8px;
+            text-align: left;
+        }
+
+        .warning-box h3 {
+            color: var(--danger);
+            margin-top: 0;
+            font-size: 24px;
+        }
+
+        /* --- PIED DE PAGE --- */
+        footer {
+            background-color: var(--bg-white);
+            border-top: 1px solid #e2e8f0;
+            padding: 40px 20px;
+            text-align: center;
+            color: var(--text-muted);
+        }
+
+        .roadmap {
+            color: var(--blue-mental);
+            font-weight: 600;
+            margin-top: 10px;
+        }
+    </style>
 <header class="hero-section">
     <h1>CENTURION MOBILE</h1>
     <h2>La forteresse de poche. 100% Hors-ligne. 100% À vous.</h2>
