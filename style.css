@@ -1,0 +1,155 @@
+/* ==========================================
+   STYLES SPÉCIFIQUES POUR LA PAGE MOBILE
+   ========================================== */
+
+/* Section Hero (En-tête) */
+.hero-section {
+    text-align: center;
+    padding: 50px 20px;
+    max-width: 800px;
+    margin: 0 auto;
+}
+.hero-section h1 {
+    font-size: 2.5rem;
+    letter-spacing: 2px;
+    margin-bottom: 10px;
+}
+.hero-section h2 {
+    color: #a8b2c1; /* Gris clair */
+    font-weight: 400;
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+}
+
+/* Boutons d'action */
+.action-buttons {
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 30px;
+}
+.btn-download {
+    background-color: #d32f2f; /* Rouge urgence/action */
+    color: #fff;
+    padding: 12px 24px;
+    text-decoration: none;
+    border-radius: 4px;
+    font-weight: bold;
+    text-transform: uppercase;
+    transition: 0.3s;
+}
+.btn-download:hover { background-color: #b71c1c; }
+
+.btn-secondary {
+    background-color: #333;
+    color: #fff;
+    border: 1px solid #555;
+    padding: 12px 24px;
+    text-decoration: none;
+    border-radius: 4px;
+    transition: 0.3s;
+}
+.btn-secondary:hover { background-color: #444; }
+
+/* Blocs d'instructions (Les Étapes) */
+.guide-section {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+.step-block {
+    background: rgba(255, 255, 255, 0.03); /* Fond très légèrement gris */
+    border-left: 4px solid #555; /* Ligne grise sur le côté */
+    padding: 25px;
+    margin-bottom: 30px;
+    border-radius: 0 8px 8px 0;
+}
+.step-block h3 {
+    margin-top: 0;
+    color: #fff;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    padding-bottom: 10px;
+    margin-bottom: 15px;
+}
+.step-block ul, .step-block ol {
+    line-height: 1.6;
+    color: #ccc;
+}
+.step-block li {
+    margin-bottom: 10px;
+}
+
+/* Boîte d'Alerte (Pour le bug Android) */
+.alert-box.warning {
+    background: rgba(255, 60, 60, 0.05);
+    border: 1px solid rgba(255, 60, 60, 0.3);
+    border-left: 4px solid #d32f2f;
+    padding: 20px;
+    margin-top: 20px;
+    border-radius: 4px;
+}
+.alert-box.warning h4 {
+    color: #d32f2f;
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+
+/* Tableau de Comparaison */
+.comparison-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    background: rgba(0, 0, 0, 0.2);
+}
+.comparison-table th, .comparison-table td {
+    border: 1px solid #444;
+    padding: 15px;
+    text-align: left;
+    color: #ccc;
+}
+.comparison-table th {
+    background: #1a1a1a;
+    color: #fff;
+    font-weight: bold;
+}
+
+/* Liste des Icônes (Étape 6) */
+.icon-list {
+    list-style: none;
+    padding: 0;
+}
+.icon-list li {
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    color: #ccc;
+}
+.inline-icon {
+    width: 32px;
+    height: 32px;
+    margin-right: 15px;
+    background: rgba(255, 255, 255, 0.1); /* Petit fond pour faire ressortir l'icône */
+    padding: 5px;
+    border-radius: 4px;
+}
+
+/* Pied de page */
+footer {
+    text-align: center;
+    padding: 40px 20px;
+    margin-top: 40px;
+    border-top: 1px solid #333;
+}
+.btn-forum {
+    color: #a8b2c1;
+    text-decoration: none;
+    font-size: 1.1rem;
+    display: inline-block;
+    margin-bottom: 15px;
+}
+.btn-forum:hover { color: #fff; }
+.copyright {
+    color: #666;
+    font-size: 0.9rem;
+}
